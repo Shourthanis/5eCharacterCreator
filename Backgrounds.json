@@ -1,0 +1,9 @@
+[
+  {
+    "extras": "A holy symbol (a gift to you when you entered the priesthood), a prayer book or prayer wheel, 5 sticks of incense, vestments, a set of common clothes, and a pouch containing 15 gp",
+    "feature": "Shelter of Faith: You and your adventuring companions can expect to receive free healing and care at a temple, shrine, or other established presence of your faith, though you must provide any material components needed for spells.",
+    "languages": "Two of your choice",
+    "name": "Acolyte",
+    "proficiencySkillSave": "Insight, Religion"
+  }
+]

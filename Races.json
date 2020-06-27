@@ -1,0 +1,229 @@
+[
+  {
+    "name": "Dragonborn",
+    "ageMinimum": 15.0,
+    "ageMaximum": 80.0,
+    "heightAvg": 6.0,
+    "sizeClass": "Medium",
+    "speedBase": 30.0,
+    "languages": "Common (srw), Draconic (srw)",
+    "extras": "Draconic Ancestry. You have draconic ancestry. Choose one type of dragon from the Draconic Ancestry table. Your breath weapon and damage resistance are determined by the dragon type, as shown in the table. \nBreath Weapon. You can use your action to exhale destructive energy. Your draconic ancestry determines the size, shape, and damage type of the exhalation. When you use your breath weapon, each creature in the area of the exhalation must make a saving throw, the type of which is determined by your draconic ancestry. The DC for this saving throw equals 8 + your Constitution modifier + your proficiency bonus. A creature takes 2d6 damage on a failed save, and half as much damage on a successful one. The damage increases to 3d6 at 6th level, 4d6 at 11th level, and 5d6 at 16th level. After you use your breath weapon, you can\u2019t use it again until you complete a short or long rest.\nDamage Resistance. You have resistance to the damage type associated with your draconic ancestry.\n",
+    "abilityBonus": [
+      2,
+      0,
+      0,
+      0,
+      0,
+      1
+    ]
+  },
+  {
+    "name": "Dwarf",
+    "ageMinimum": 50.0,
+    "ageMaximum": 350.0,
+    "heightAvg": 4.5,
+    "sizeClass": "Medium",
+    "speedBase": 25.0,
+    "proficiencySkillSave": "Advantage on saves vs. poison, Double proficiency for INT(history) checks about stonework",
+    "proficiencyArmsArmor": "Battleaxe, Handaxe, Light Hammer, War Hammer",
+    "proficiencyTools": "Choose 1 (Smith, Brewer, Mason)",
+    "languages": "Common (srw), Dwarvish (srw)",
+    "extras": "Darkvision 60ft, poison damage resistance",
+    "abilityBonus": [
+      0,
+      0,
+      2,
+      0,
+      0,
+      0
+    ],
+    "subrace": [
+      {
+        "name": "Hill",
+        "extras": "+1hp per level",
+        "abilityBonus": [
+          0,
+          0,
+          0,
+          0,
+          1,
+          0
+        ]
+      }
+    ]
+  },
+  {
+    "name": "Elf",
+    "ageMinimum": 100.0,
+    "ageMaximum": 750.0,
+    "heightAvg": 5.5,
+    "sizeClass": "Medium",
+    "speedBase": 30.0,
+    "proficiencySkillSave": "Perception, advantage against charm",
+    "languages": "Common (srw), Elvish (srw)",
+    "extras": "Darkvision 60ft, Trance: half length long rests, can't be magically put to sleep",
+    "abilityBonus": [
+      0,
+      2,
+      0,
+      0,
+      0,
+      0
+    ],
+    "subrace": [
+      {
+        "name": "High",
+        "proficiencyArmsArmor": "Long/Short Sword, Long/Short Bow",
+        "extras": "One cantrip from wizard list (INT)",
+        "abilityBonus": [
+          0,
+          0,
+          0,
+          1,
+          0,
+          0
+        ]
+      }
+    ]
+  },
+  {
+    "name": "Gnome",
+    "ageMinimum": 40.0,
+    "ageMaximum": 450.0,
+    "heightAvg": 3.5,
+    "sizeClass": "Small",
+    "speedBase": 25.0,
+    "proficiencySkillSave": "INT, WIS and CHA saves against magic",
+    "languages": "Common (srw), Gnomish (srw)",
+    "extras": "Darkvision: 60 ft",
+    "abilityBonus": [
+      0,
+      0,
+      0,
+      2,
+      0,
+      0
+    ],
+    "subrace": [
+      {
+        "name": "Rock",
+        "proficiencySkillSave": "Double proficiency on History(INT) checks related to magical, alchemical or technological items or devices.",
+        "extras": "Tinker: You can spend 1 hour and 10 gp worth of materials to construct a Tiny clockwork device (AC 5, 1 hp). The device ceases to function after 24 hours (unless you spend 1 hour repairing it to keep the device functioning), or when you use your action to dismantle it; at that time, you can reclaim the materials used to create it. You can have up to three such devices active at a time. When you create a device, choose one of the following options: \n--Clockwork Toy. This toy is a clockwork animal, monster, or person, such as a frog, mouse, bird, dragon, or soldier. When placed on the ground, the toy moves 5 feet across the ground on each of your turns in a random direction. It makes noises as appropriate to the creature it represents. \n--Fire Starter. The device produces a miniature flame, which you can use to light a candle, torch, or campfire. Using the device requires your action. \n--Music Box. When opened, this music box plays a single song at a moderate volume. The box stops playing when it reaches the song\u2019s end or when it is closed.\n",
+        "abilityBonus": [
+          0,
+          1,
+          0,
+          0,
+          0,
+          0
+        ]
+      }
+    ]
+  },
+  {
+    "name": "Half-Elf",
+    "ageMinimum": 20.0,
+    "ageMaximum": 180.0,
+    "heightAvg": 5.5,
+    "sizeClass": "Medium",
+    "speedBase": 30.0,
+    "proficiencySkillSave": "Two skills of choice",
+    "languages": "Common (srw), Elvish (srw), one extra (srw)",
+    "extras": "Darkvision: 60 ft, Trance: half length long rests, can't be magically put to sleep\nIncrease two ability scores of your choice by one.\n",
+    "abilityBonus": [
+      0,
+      0,
+      0,
+      0,
+      0,
+      2
+    ]
+  },
+  {
+    "name": "Halfling",
+    "ageMinimum": 20.0,
+    "ageMaximum": 250.0,
+    "heightAvg": 3.0,
+    "sizeClass": "Small",
+    "speedBase": 25.0,
+    "proficiencySkillSave": "Advantage on saves aginst being frightened",
+    "languages": "Common (s), Halfling (srw)",
+    "extras": "Lucky: When a 1 on a d20 is rolled for and attack, ability check, or save, reroll and use the new roll\nHalfling Nimbleness: You can move through the space of a creature that is a size larger than you\n",
+    "abilityBonus": [
+      0,
+      2,
+      0,
+      0,
+      0,
+      0
+    ],
+    "subrace": [
+      {
+        "name": "Lightfoot",
+        "extras": "Naturally Stealthy: You can attempt to hide even if you are obscured only by a creature that is at least one size larger than you.",
+        "abilityBonus": [
+          0,
+          0,
+          0,
+          0,
+          0,
+          1
+        ]
+      }
+    ]
+  },
+  {
+    "name": "Half-Orc",
+    "ageMinimum": 14.0,
+    "ageMaximum": 75.0,
+    "heightAvg": 5.5,
+    "sizeClass": "Medium",
+    "speedBase": 30.0,
+    "proficiencySkillSave": "Intimidation",
+    "languages": "Common (srw), Orc (srw)",
+    "extras": "Darkvision: 60 ft\nRelentless Endurance:  When you are reduced to 0 hit points but not killed outright, you can drop to 1 hit point instead. You can\u2019t use this feature again until you finish a long rest. \nSavage Attacks:  When you score a critical hit with a melee weapon attack, you can roll one of the weapon\u2019s damage dice one additional time and add it to the extra damage of the critical hit.\n",
+    "abilityBonus": [
+      2,
+      0,
+      1,
+      0,
+      0,
+      0
+    ]
+  },
+  {
+    "name": "Human",
+    "ageMinimum": 18.0,
+    "ageMaximum": 85.0,
+    "heightAvg": 5.5,
+    "sizeClass": "Medium",
+    "speedBase": 30.0,
+    "languages": "Common (srw), one extra (srw)",
+    "abilityBonus": [
+      1,
+      1,
+      1,
+      1,
+      1,
+      1
+    ]
+  },
+  {
+    "name": "Teifling",
+    "ageMinimum": 18.0,
+    "ageMaximum": 95.0,
+    "heightAvg": 5.5,
+    "sizeClass": "Medium",
+    "speedBase": 30.0,
+    "languages": "Common (srw), Infernal (srw)",
+    "extras": "Darkvision: 60 ft\nHellish Resistance: You have resistance to fire damage.\n Infernal Legacy:  You know the thaumaturgy cantrip. When you reach 3rd level, you can cast the hellish rebuke spell as a 2nd-level spell once with this trait and regain the ability to do so when you finish a long rest. When you reach 5th level, you can cast the darkness spell once with this trait and regain the ability to do so when you finish a long rest. Charisma is your spellcasting ability for these spells.\n",
+    "abilityBonus": [
+      0,
+      0,
+      0,
+      1,
+      0,
+      2
+    ]
+  }
+]
