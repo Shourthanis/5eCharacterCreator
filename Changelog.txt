@@ -1,0 +1,3 @@
+1.0.1
+--Fixed bug with outputing duplicate features for level 1
+--Fixed bug with sell slots for set levels being output as for a higher level
