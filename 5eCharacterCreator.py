@@ -1,12 +1,9 @@
 #5th Edition Character Creator
 #Shourthanis
-#Version 1.0.0
+#Version 1.0.1
 
 """
 To Do List:
-
-Spellcasting for class display
-Spellcasting for export
 
 random overGen?
 
@@ -475,7 +472,7 @@ def export():
     inches = int(height % 12)
     doc.add_paragraph("Age: " + str(ageEntry.get()) + " years          Height: " + str(feet) + " Feet, " + str(inches) + " inches          Size: " + raceData[raceNum]['sizeClass'])
     #Initiative, speed, passive wisdom
-    doc.add_paragraph("Initiative Bonus: " + str(abilityMod[1]) + "          Speed: " + str(raceData[raceNum]['speedBase']) + "          Passive Perception: " + str(abilityMod[4] + 8))
+    doc.add_paragraph("Initiative Bonus: " + str(abilityMod[1]) + "          Speed: " + str(int(raceData[raceNum]['speedBase'])) + " ft          Passive Perception: " + str(abilityMod[4] + 8))
     #health
     if levelMode == 1: doc.add_paragraph("Max Health: " + str(health[levelSelect.get() - 1]) + " HP")
     else:
@@ -549,12 +546,12 @@ def export():
             rowCells = spellTable.add_row().cells
             rowCells[0].text = "level " + str(levelSelect.get())
             if 'cantripsKnown' in classData[classNum]:
-                rowCells[1].text = str(classData[classNum]['cantripsKnown'][levelSelect.get()])
+                rowCells[1].text = str(classData[classNum]['cantripsKnown'][levelSelect.get()-1])
             if 'spellsKnown' in classData[classNum]:
-                 rowCells[2].text = str(classData[classNum]['spellsKnown'][levelSelect.get()])
+                 rowCells[2].text = str(classData[classNum]['spellsKnown'][levelSelect.get()-1])
             for y in range (0, 9):
-                if str(classData[classNum]['spellSlots'][y][levelSelect.get()]) == '0': out = '--'
-                else: out = str(classData[classNum]['spellSlots'][y][levelSelect.get()])
+                if str(classData[classNum]['spellSlots'][y][levelSelect.get()-1]) == '0': out = '--'
+                else: out = str(classData[classNum]['spellSlots'][y][levelSelect.get()-1])
                 rowCells[3+y].text = out
     #features
     doc.add_heading("Features and Abilities", 2)
@@ -564,8 +561,6 @@ def export():
         if 'extras' in raceData[raceNum]['subrace'][subraceNum]: doc.add_paragraph(raceData[raceNum]['subrace'][subraceNum]['extras'])
     if 'extras' in backgroundData[backgroundNum]: doc.add_paragraph(backgroundData[backgroundNum]['extras'])
     doc.add_paragraph(backgroundData[backgroundNum]['feature'])
-    doc.add_paragraph(classData[classNum]['lvl1'])
-    if 'lvl1' in classData[classNum]['subClass'][subclassNum]: doc.add_paragraph("--Lvl 1: " + classData[classNum]['subClass'][subclassNum]['lvl1'])
     for x in range (1, 21):
         if (not (levelMode == 1)) or levelSelect.get() >= x:
             if 'lvl' + str(x) in classData[classNum]: doc.add_paragraph("Lvl " + str(x) + ": " + classData[classNum]['lvl' + str(x)])
@@ -578,7 +573,7 @@ def export():
         if 'languages' in raceData[raceNum]['subrace'][subraceNum]: doc.add_paragraph(raceData[raceNum]['subrace'][subraceNum]['languages'])
     if 'languages' in backgroundData[backgroundNum]: doc.add_paragraph(backgroundData[backgroundNum]['languages'])
     #Final
-    doc.save(nameEntry.get() + ".docx")
+    doc.save("Output/" + nameEntry.get() + ".docx")
     exportButton["state"] = DISABLED
 
 #Formatting labels for rows 0 and 99, and column 99
